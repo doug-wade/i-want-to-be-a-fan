@@ -1,0 +1,19 @@
+---
+pagination:
+  data: uswnt
+  size: 1
+  alias: player
+permalink: "player/{{ player.name | slugify }}/"
+---
+
+<h1>{{ player.name }}</h1>
+
+<h2>Position</h2>
+<div>{{ player.position }}</div>
+
+<h2>Number</h2>
+<div>{{ player.number }}</div>
+
+<a href="https://www.ussoccer.com/{{ player.ussoccerLink }}"
+  >Link to US Soccer Bio</a
+>
