@@ -1,0 +1,23 @@
+{
+  "name": "i-want-to-be-a-fan",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doug-wade/i-want-to-be-a-fan.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/doug-wade/i-want-to-be-a-fan/issues"
+  },
+  "homepage": "https://github.com/doug-wade/i-want-to-be-a-fan#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
