@@ -9,10 +9,17 @@ permalink: "player/{{ player.name | slugify }}/"
 <h1>{{ player.name }}</h1>
 
 <h2>Position</h2>
-<div>{{ player.position }}</div>
+<p>{{ player.position }}</p>
 
 <h2>Number</h2>
-<div>{{ player.number }}</div>
+<p>{{ player.number }}</p>
+
+<h2>NWSL stats</h2>
+<p>
+  NWSL statistics provided by
+  <a href="https://americansocceranalysis.com/">American Soccer Analysis</a>
+</p>
+<p>{% asa player.name %}</p>
 
 <a href="https://www.ussoccer.com/{{ player.ussoccerLink }}"
   >Link to US Soccer Bio</a

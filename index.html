@@ -6,9 +6,12 @@
 <body>
   <p>Welcome!</p>
   <ul>
-    Players: 
-    {% for player in uswnt %}
-        <li><a href="player/{{ player.name | slugify }}/">{{ player.name }}</a></li>
+    Players: {% for player in uswnt %}
+    <li>
+      <a href="player/{{ player.name | slugify }}/index.html"
+        >{{ player.name }}</a
+      >
+    </li>
     {% endfor %}
   </ul>
 </body>

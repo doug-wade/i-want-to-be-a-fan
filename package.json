@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "eleventy --serve --port 3000",
+    "build": "eleventy",
+    "clean": "rm -rf .cache _site",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,5 +22,11 @@
   "homepage": "https://github.com/doug-wade/i-want-to-be-a-fan#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
+    "@lit-labs/eleventy-plugin-lit": "^1.0.1",
+    "itscalledsoccer": "^1.0.1",
+    "js-convert-case": "4.2.0"
   }
 }
