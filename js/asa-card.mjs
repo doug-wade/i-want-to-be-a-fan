@@ -27,7 +27,6 @@ class AsaCard extends LitElement {
     xgoals: {},
     xplace: {},
     goalsMinusXgoals: {},
-    keyPasses: {},
     primaryAssists: {},
     xassists: {},
     primaryAssistsMinusXassists: {},
@@ -57,6 +56,7 @@ class AsaCard extends LitElement {
                 <span class="label">${toSentenceCase(key)}:</span> ${this[key]}
               </p>`
           )}
+        <p></p>
       </div>
     `;
   }
