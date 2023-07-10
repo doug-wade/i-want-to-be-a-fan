@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 
-<head>
+<head lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A USWNT fan site" />
+  <meta name="author" content="Doug Wade" />
+
   <title>I Want To Be A Fan</title>
 </head>
 <body>
-  <p>Welcome!</p>
+  <h1>USWNT Roster</h1>
   <ul>
-    Players: {% for player in uswnt %}
+    {% for player in uswnt %}
     <li>
       <a href="player/{{ player.name | slugify }}/index.html"
         >{{ player.name }}</a
