@@ -25,7 +25,7 @@
     "@11ty/eleventy": "^2.0.1",
     "eslint": "^8.49.0",
     "eslint-plugin-lit": "^1.9.1",
-    "eslint-plugin-wc": "^2.0.0"
+    "eslint-plugin-wc": "^2.0.3"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
