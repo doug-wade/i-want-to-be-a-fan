@@ -29,7 +29,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
-    "@lit-labs/eleventy-plugin-lit": "^1.0.1",
+    "@lit-labs/eleventy-plugin-lit": "^1.0.3",
     "itscalledsoccer": "^1.0.1",
     "js-convert-case": "4.2.0"
   }
