@@ -9,7 +9,6 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:wc/recommended",
-    "plugin:lit/recommended"
+    "plugin:@tybalt/eslint-plugin/recommended"
   ]
 }

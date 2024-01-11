@@ -23,9 +23,10 @@
   "homepage": "https://github.com/doug-wade/i-want-to-be-a-fan#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "eslint": "^8.48.0",
+    "@tybalt/eleventy-plugin": "^0.1.6",
     "@tybalt/eslint-plugin": "^0.1.6",
-    "@tybalt/eleventy-plugin": "^0.1.6"
+    "@typescript-eslint/utils": "^6.18.1",
+    "eslint": "^8.48.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
