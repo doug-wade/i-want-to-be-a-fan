@@ -1,64 +1,54 @@
-import { LitElement, html, css } from "lit";
-import { toKebabCase, toSentenceCase } from "js-convert-case";
+import { defineComponent, html } from "@tybalt/core";
+import { toSentenceCase } from "js-convert-case";
 
-let properties = {};
-const caseProps = (props) => {
-  properties = Object.fromEntries(
-    Object.entries(props).map(([key, value]) => {
-      return [key, { ...value, attribute: toKebabCase(key) }];
-    })
-  );
-  return properties;
+const props = {
+  generalPosition: {},
+  minutesPlayed: {},
+  shots: {},
+  shotsOnTarget: {},
+  keyPasses: {},
+  xgoals: {},
+  xplace: {},
+  goalsMinusXgoals: {},
+  primaryAssists: {},
+  xassists: {},
+  primaryAssistsMinusXassists: {},
+  xgoalsPlusXassists: {},
+  pointsAdded: {},
+  xpointsAdded: {},
+  attemptedPasses: {},
+  passCompletionPercentage: {},
+  xpassCompletionPercentage: {},
+  passesCompletedOverExpected: {},
+  passesCompletedOverExpectedP100: {},
+  avgDistanceYds: {},
+  avgVerticalDistanceYds: {},
+  shareTeamTouches: {},
+  countGames: {},
+  data: {},
 };
 
-class AsaCard extends LitElement {
-  static styles = css`
-    .label {
-      font-weight: 600;
-    }
-  `;
-
-  static properties = caseProps({
-    generalPosition: {},
-    minutesPlayed: {},
-    shots: {},
-    shotsOnTarget: {},
-    keyPasses: {},
-    xgoals: {},
-    xplace: {},
-    goalsMinusXgoals: {},
-    primaryAssists: {},
-    xassists: {},
-    primaryAssistsMinusXassists: {},
-    xgoalsPlusXassists: {},
-    pointsAdded: {},
-    xpointsAdded: {},
-    attemptedPasses: {},
-    passCompletionPercentage: {},
-    xpassCompletionPercentage: {},
-    passesCompletedOverExpected: {},
-    passesCompletedOverExpectedP100: {},
-    avgDistanceYds: {},
-    avgVerticalDistanceYds: {},
-    shareTeamTouches: {},
-    countGames: {},
-    data: { type: Object },
-  });
-
-  render() {
+export default defineComponent({
+  name: 'asa-card',
+  props,
+  render(renderProps) {
     return html`
       <div>
-        ${Object.keys(properties)
+        ${Object.keys(props)
           .filter((key) => !["data"].includes(key))
           .map(
-            (key) =>
-              html`<p>
-                <span class="label">${toSentenceCase(key)}:</span> ${this[key]}
-              </p>`
+            (key) => {
+              const renderProp = renderProps[key];
+              if (key && renderProp && renderProp.value) {
+                return html`<p>
+                  <span class="label">${toSentenceCase(key)}:</span> ${renderProp}
+                </p>`
+              }
+              
+              return html``;
+            }
           )}
-        <p></p>
       </div>
     `;
   }
-}
-customElements.define("asa-card", AsaCard);
+});
