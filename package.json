@@ -15,21 +15,21 @@
     "url": "git+https://github.com/doug-wade/i-want-to-be-a-fan.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Doug Wade <douglas.b.wade@gmail.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/doug-wade/i-want-to-be-a-fan/issues"
   },
   "homepage": "https://github.com/doug-wade/i-want-to-be-a-fan#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "eslint": "^8.56.0",
-    "eslint-plugin-lit": "^1.11.0",
-    "eslint-plugin-wc": "^2.0.4"
+    "eslint": "^8.48.0",
+    "@tybalt/eslint-plugin": "^0.1.6",
+    "@tybalt/eleventy-plugin": "^0.1.6"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
-    "@lit-labs/eleventy-plugin-lit": "^1.0.3",
+    "@tybalt/core": "^0.1.6",
     "itscalledsoccer": "^1.0.1",
     "js-convert-case": "4.2.0"
   }

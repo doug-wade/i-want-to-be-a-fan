@@ -1,5 +1,5 @@
 const EleventyFetch = require("@11ty/eleventy-fetch");
-const litPlugin = require("@lit-labs/eleventy-plugin-lit");
+const tybaltPlugin = require("@tybalt/eleventy-plugin");
 const { toKebabCase } = require("js-convert-case");
 const Client = require("itscalledsoccer").default;
 
@@ -19,9 +19,8 @@ const toAttributes = (obj) => {
 };
 
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPlugin(litPlugin, {
-    mode: "worker",
-    componentModules: ["js/asa-card.mjs"],
+  eleventyConfig.addPlugin(tybaltPlugin, {
+    pattern: "js/*.mjs"
   });
   eleventyConfig.addAsyncShortcode("asa", async function (playerName) {
     const res = await fetchAsaPlayerData(playerName);
