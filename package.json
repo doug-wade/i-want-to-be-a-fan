@@ -23,14 +23,14 @@
   "homepage": "https://github.com/doug-wade/i-want-to-be-a-fan#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@tybalt/eleventy-plugin": "^0.1.7",
-    "@tybalt/eslint-plugin": "^0.1.7",
+    "@tybalt/eleventy-plugin": "^0.1.8",
+    "@tybalt/eslint-plugin": "^0.1.8",
     "@typescript-eslint/utils": "^6.18.1",
     "eslint": "^8.48.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
-    "@tybalt/core": "^0.1.7",
+    "@tybalt/core": "^0.1.8",
     "itscalledsoccer": "^1.0.1",
     "js-convert-case": "4.2.0"
   }
