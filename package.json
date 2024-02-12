@@ -25,7 +25,7 @@
     "@11ty/eleventy": "^2.0.1",
     "@tybalt/eleventy-plugin": "^0.1.8",
     "@tybalt/eslint-plugin": "^0.1.8",
-    "@typescript-eslint/utils": "^6.20.0",
+    "@typescript-eslint/utils": "^6.21.0",
     "eslint": "^8.48.0"
   },
   "dependencies": {
