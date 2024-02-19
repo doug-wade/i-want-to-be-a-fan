@@ -23,7 +23,7 @@
   "homepage": "https://github.com/doug-wade/i-want-to-be-a-fan#readme",
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
-    "@tybalt/eleventy-plugin": "^0.1.8",
+    "@tybalt/eleventy-plugin": "^0.1.9",
     "@tybalt/eslint-plugin": "^0.1.9",
     "@typescript-eslint/utils": "^6.21.0",
     "eslint": "^8.48.0"
