@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
-    "@tybalt/core": "^0.1.8",
+    "@tybalt/core": "^0.1.9",
     "itscalledsoccer": "^1.0.2",
     "js-convert-case": "4.2.0"
   }
