@@ -26,7 +26,7 @@
     "@tybalt/eleventy-plugin": "^0.1.9",
     "@tybalt/eslint-plugin": "^0.1.9",
     "@typescript-eslint/utils": "^7.0.2",
-    "eslint": "^8.48.0"
+    "eslint": "^8.57.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
