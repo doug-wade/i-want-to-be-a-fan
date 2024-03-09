@@ -10,14 +10,6 @@
 </head>
 <body>
   <h1>USWNT Roster</h1>
-  <ul>
-    {% for player in roster %}
-    <li>
-      <a href="player/{{ player.name | slugify }}/index.html"
-        >{{ player.name }}</a
-      >
-    </li>
-    {% endfor %}
-  </ul>
+  <asa-roster roster="{{ roster | json | escape }}"></asa-roster>
   <footer>Made with <a href="https://www.tybalt.org">Tybalt</a></footer>
 </body>
