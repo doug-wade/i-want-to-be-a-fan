@@ -16,7 +16,7 @@ module.exports = async function() {
   return Array.from(playerDivs).map((playerDiv) => {
     const nameAndNumber = playerDiv.querySelector("div.PlayerThumbnail-module__playerName--2bbtZ");
     const nameAndNumberArray = nameAndNumber.innerHTML.split(/<!-- --> <!-- --> <!-- -->/);
-    const number = nameAndNumberArray.pop();
+    const number = nameAndNumberArray.shift();
     const name = nameAndNumberArray.join(" ");
 
     const anchor = playerDiv.querySelector("a");
