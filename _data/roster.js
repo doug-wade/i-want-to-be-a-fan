@@ -13,8 +13,6 @@ module.exports = async function() {
   const dom = new JSDOM(response);
   const playerDivs = dom.window.document.querySelectorAll("div.col.col--xs-6.col--sm-4.col--md-3");
 
-  console.log(playerDivs.length)
-
   return Array.from(playerDivs).map((playerDiv) => {
     const nameAndNumber = playerDiv.querySelector("div.PlayerThumbnail-module__playerName--2bbtZ");
     const nameAndNumberArray = nameAndNumber.innerHTML.split(/<!-- --> <!-- --> <!-- -->/);
