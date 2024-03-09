@@ -11,7 +11,7 @@
 <body>
   <h1>USWNT Roster</h1>
   <ul>
-    {% for player in uswnt %}
+    {% for player in roster %}
     <li>
       <a href="player/{{ player.name | slugify }}/index.html"
         >{{ player.name }}</a
