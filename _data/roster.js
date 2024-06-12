@@ -14,7 +14,7 @@ module.exports = async function() {
   const playerDivs = dom.window.document.querySelectorAll("div.col.col--xs-6.col--sm-4.col--md-3");
 
   return Array.from(playerDivs).map((playerDiv) => {
-    const nameAndNumber = playerDiv.querySelector("div.PlayerThumbnail-module__playerName--2bbtZ");
+    const nameAndNumber = playerDiv.querySelector("div.PlayerThumbnail_playerName__iCojI");
     const nameAndNumberArray = nameAndNumber.innerHTML.split(/<!-- --> <!-- --> <!-- -->/);
     const number = nameAndNumberArray.shift();
     const name = nameAndNumberArray.join(" ");
@@ -29,7 +29,6 @@ module.exports = async function() {
         name,
         number,
         link,
-        ussoccerLink: link,
         img: imgSrc
     }
   })
