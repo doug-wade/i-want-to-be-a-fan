@@ -338,13 +338,19 @@
     escape-string-regexp "^2.0.0"
     lodash.deburr "^4.1.0"
 
-"@tybalt/core@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@tybalt/core/-/core-0.1.9.tgz#0004e0701b431c6f2fdd28832614b2e85f30afa0"
-  integrity sha512-dmuMb+JPSKSkqzV/fFkRCxedYQvFk6Xx4KO65Jd2F8e8C0PBbMCek0OVVcJIdkvxUo3s6cykPT791WGRpj5uKQ==
+"@tybalt/context@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tybalt/context/-/context-0.1.10.tgz#8e72bee22de181f04fedfd8698e7e7842b0471fa"
+  integrity sha512-qEnyVRZrH/ZfFRDPD5iaxrtrKEytV+kTY+rz/Q1BIad7JVPROyp0/wbaI5xawTAreq24hRHesJoWsV7+IphmTw==
+
+"@tybalt/core@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tybalt/core/-/core-0.1.10.tgz#5abaead05f20e14714a4bfacf8463ff83637e2d1"
+  integrity sha512-MVseiYffJ0grtzPBSzGh1KZ7PfUIx0Muu7HlqySNtjz1mlsTjt+tyP/+4MfiHGtogBA+isz3rXRh8zo11m1nEg==
   dependencies:
-    "@tybalt/reactive" "^0.1.9"
-    "@tybalt/validator" "^0.1.9"
+    "@tybalt/context" "^0.1.10"
+    "@tybalt/reactive" "^0.1.10"
+    "@tybalt/validator" "^0.1.10"
 
 "@tybalt/eleventy-plugin@^0.1.9":
   version "0.1.9"
@@ -368,15 +374,15 @@
   dependencies:
     "@typescript-eslint/utils" "^6.11.0"
 
-"@tybalt/reactive@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@tybalt/reactive/-/reactive-0.1.9.tgz#591099eb848857b715671c878787d46b77f4b572"
-  integrity sha512-lBAaomDc1wCRWtaF0Rk0AkFFkREg0vbKn3W3a7iNAejVSnFd0bXLR4XonhR5nOGrm6irD9DSNWLr8lqn1Ik+aQ==
+"@tybalt/reactive@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tybalt/reactive/-/reactive-0.1.10.tgz#72a22eb7b9ee73863d33c7fc72f648fb611c6aa3"
+  integrity sha512-/sUW19UXaGVlDOWE3s93a2uHk4vXj2nPCxj1CZtd9BT6+FOm4F7OSEKRgsba0tMzUvSHqxUpnn6gj/UPpFubaw==
 
-"@tybalt/validator@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@tybalt/validator/-/validator-0.1.9.tgz#aab4acc2fdbc76c02e0435d9de2e401296d54098"
-  integrity sha512-OIsG0gtJjhc7EW+7htTHYqJJpkPV6hxWDZ/BP5jm7lDTDtX161SHPKAJ4UnP9JZTE2+za1WBJcepa1X9p2k2yQ==
+"@tybalt/validator@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tybalt/validator/-/validator-0.1.10.tgz#2af15a55a73b138a7e962e92164cb12d8e6cd5fe"
+  integrity sha512-cFHlgTlh2MAvFf1IP7VxkzSb/nBWsMMW8r42KhgvqESkcDBtpTlddxgPtkZWjIubmWp/b2Zv8wjxLw2RVHplWQ==
 
 "@types/json-schema@^7.0.12":
   version "7.0.15"
@@ -2564,7 +2570,16 @@ statuses@2.0.1:
   resolved "https://registry.yarnpkg.com/statuses/-/statuses-2.0.1.tgz#55cb000ccf1d48728bd23c685a063998cf1a1b63"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
 
-"string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+"string-width-cjs@npm:string-width@^4.2.0":
+  version "4.2.3"
+  resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
+  integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
+  dependencies:
+    emoji-regex "^8.0.0"
+    is-fullwidth-code-point "^3.0.0"
+    strip-ansi "^6.0.1"
+
+string-width@^4.1.0:
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -2582,7 +2597,14 @@ string-width@^5.0.1, string-width@^5.1.2:
     emoji-regex "^9.2.2"
     strip-ansi "^7.0.1"
 
-"strip-ansi-cjs@npm:strip-ansi@^6.0.1", strip-ansi@^6.0.0, strip-ansi@^6.0.1:
+"strip-ansi-cjs@npm:strip-ansi@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
+  integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
+  dependencies:
+    ansi-regex "^5.0.1"
+
+strip-ansi@^6.0.0, strip-ansi@^6.0.1:
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/strip-ansi/-/strip-ansi-6.0.1.tgz#9e26c63d30f53443e9489495b2105d37b67a85d9"
   integrity sha512-Y38VPSHcqkFrCpFnQ9vuSXmquuv5oXOKpGeT6aGrr3o3Gc9AlVa6JBfUSOCnbxGGZF+/0ooI7KrPuUSztUdU5A==
