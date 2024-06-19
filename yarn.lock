@@ -352,20 +352,20 @@
     "@tybalt/reactive" "^0.1.10"
     "@tybalt/validator" "^0.1.10"
 
-"@tybalt/eleventy-plugin@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@tybalt/eleventy-plugin/-/eleventy-plugin-0.1.9.tgz#aa0141abe3b057a0bdad47be838aae58f8275b5e"
-  integrity sha512-2pSdEMdSm0uUPEOae8/nPelk+d9T+BV/8am7P8s7RjJluDKoo7MWja7rdufFd8Ctkg6vxXRAD6jJb9W3oJy31g==
+"@tybalt/eleventy-plugin@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tybalt/eleventy-plugin/-/eleventy-plugin-0.1.10.tgz#934745689ee2ca871acaf13aa2fc206e324a5026"
+  integrity sha512-rKkY0MfRMZK29KAJxmALQpUOxlD6b2TnAJlkmN1GWuq7/fG3kDebHHmSM+pd5RGFKRDvHbz+CT9Yx3GoRJDfvw==
   dependencies:
-    "@tybalt/esbuild-plugin" "^0.1.9"
-    esbuild "^0.20.0"
+    "@tybalt/esbuild-plugin" "^0.1.10"
+    esbuild "^0.20.1"
     glob "^10.3.10"
     jsdom "^24.0.0"
 
-"@tybalt/esbuild-plugin@^0.1.9":
-  version "0.1.9"
-  resolved "https://registry.yarnpkg.com/@tybalt/esbuild-plugin/-/esbuild-plugin-0.1.9.tgz#aae30570de9c6a57de445026e749e606efdd5875"
-  integrity sha512-BYZb6ed8wFSq1KWnfGpOBq0p72TqAvPs4t5MIrjKF5wc4CPLov+OdA3DYDt4vsZ6Bz5ausgjC0Q/ZMfAqYNyag==
+"@tybalt/esbuild-plugin@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@tybalt/esbuild-plugin/-/esbuild-plugin-0.1.10.tgz#1c01e7b0d3f0d574f7176785c87f0418dda84ed6"
+  integrity sha512-Lm4e8QtOANNQIoGK51rZlddoNO6MBTZXH4Hce4Hpd/b68/TKuFOgcj5PnWy6g3guj16sTiUrfGE4LJqqJIsD5Q==
 
 "@tybalt/eslint-plugin@^0.1.9":
   version "0.1.9"
@@ -1031,7 +1031,7 @@ es-errors@^1.3.0:
   resolved "https://registry.yarnpkg.com/es-errors/-/es-errors-1.3.0.tgz#05f75a25dab98e4fb1dcd5e1472c0546d5057c8f"
   integrity sha512-Zf5H2Kxt2xjTvbJvP2ZWLEICxA6j+hAmMzIlypy4xcBg1vKVnx89Wy0GbS+kf5cwCVFFzdCFh2XSCFNULS6csw==
 
-esbuild@^0.20.0:
+esbuild@^0.20.1:
   version "0.20.2"
   resolved "https://registry.yarnpkg.com/esbuild/-/esbuild-0.20.2.tgz#9d6b2386561766ee6b5a55196c6d766d28c87ea1"
   integrity sha512-WdOOppmUNU+IbZ0PaDiTst80zjnrOkyJNHoKupIcVyU8Lvla3Ugx94VzkQ32Ijqd7UhHJy75gNWDMUekcrSJ6g==
