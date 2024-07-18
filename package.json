@@ -24,7 +24,7 @@
   "devDependencies": {
     "@11ty/eleventy": "^2.0.1",
     "@tybalt/eleventy-plugin": "^0.1.10",
-    "@tybalt/eslint-plugin": "^0.1.9",
+    "@tybalt/eslint-plugin": "^0.1.10",
     "@typescript-eslint/utils": "^7.13.0",
     "eslint": "^8.57.0"
   },
