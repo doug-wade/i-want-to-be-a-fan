@@ -29,9 +29,10 @@
     "eslint": "^8.57.0"
   },
   "dependencies": {
-    "@11ty/eleventy-fetch": "github:doug-wade/eleventy-fetch#add-promise-support",
+    "@11ty/eleventy-fetch": "^5.0.0-beta.4",
     "@tybalt/core": "^0.1.10",
     "itscalledsoccer": "^1.0.2",
     "js-convert-case": "4.2.0"
-  }
+  },
+  "packageManager": "yarn@1.22.19+sha1.4ba7fc5c6e704fce2066ecbfb0b0d8976fe62447"
 }
